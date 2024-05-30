@@ -48,35 +48,35 @@ density              1,599 1.00   1.00   0.002
 ------------------------------------------------
 **Mean and Standard Deviation**
 
-Alcohol (Mean: 10.42, St. Dev.: 1.07): Average alcohol content is 10.42%, with a typical variation of ±1.07%. This indicates a moderate level of alcohol concentration common in red wines.
+**Alcohol (Mean: 10.42, St. Dev.: 1.07):** Average alcohol content is 10.42%, with a typical variation of ±1.07%. This indicates a moderate level of alcohol concentration common in red wines.
 
-Volatile Acidity (Mean: 0.53, St. Dev.: 0.18): Average volatile acidity is 0.53 with a relatively narrow range of variation. Volatile acidity affects the aroma and taste of wine.
+**Volatile Acidity (Mean: 0.53, St. Dev.: 0.18):** Average volatile acidity is 0.53 with a relatively narrow range of variation. Volatile acidity affects the aroma and taste of wine.
 
-pH (Mean: 3.31, St. Dev.: 0.15): Average pH value is 3.31, indicating a typical acidity level for red wines. The low standard deviation shows that pH levels are quite consistent across the samples.
+**pH (Mean: 3.31, St. Dev.: 0.15):** Average pH value is 3.31, indicating a typical acidity level for red wines. The low standard deviation shows that pH levels are quite consistent across the samples.
 
-Sulphates(Mean: 0.66, St. Dev.: 0.17): Average sulphates content is 0.66, with a moderate range of variation. Sulphates can influence both the taste and preservation of wine.
+**Sulphates(Mean: 0.66, St. Dev.: 0.17):** Average sulphates content is 0.66, with a moderate range of variation. Sulphates can influence both the taste and preservation of wine.
 
-Residual Sugar (Mean: 2.54, St. Dev.: 1.41): The mean residual sugar is relatively low at 2.54, but with a larger standard deviation, indicating more variability in sugar content among these wines.
+**Residual Sugar (Mean: 2.54, St. Dev.: 1.41):** The mean residual sugar is relatively low at 2.54, but with a larger standard deviation, indicating more variability in sugar content among these wines.
 
-Total Sulfur Dioxide (Mean: 46.47, St. Dev.: 32.90): Shows a high level of variation in total sulfur dioxide, which is used as a preservative in wine. The high standard deviation indicates diverse preservation levels.
+**Total Sulfur Dioxide (Mean: 46.47, St. Dev.: 32.90):** Shows a high level of variation in total sulfur dioxide, which is used as a preservative in wine. The high standard deviation indicates diverse preservation levels.
 
-Fixed Acidity(Mean: 8.32, St. Dev.: 1.74): Average fixed acidity is 8.32, with a fairly wide range of variation. Fixed acidity contributes to the tartness and sharpness of the wine.
+**Fixed Acidity(Mean: 8.32, St. Dev.: 1.74):** Average fixed acidity is 8.32, with a fairly wide range of variation. Fixed acidity contributes to the tartness and sharpness of the wine.
 
-Citric Acid (Mean: 0.27, St. Dev.: 0.19): Average citric acid content is relatively low, and its standard deviation suggests that the citric acid content varies among different wines. Citric acid can add freshness and flavor.
+**Citric Acid (Mean: 0.27, St. Dev.: 0.19):** Average citric acid content is relatively low, and its standard deviation suggests that the citric acid content varies among different wines. Citric acid can add freshness and flavor.
 
-Chlorides(Mean: 0.09, St. Dev.: 0.05):The average chlorides level is low, indicative of the salt content in wine. The standard deviation is also low, showing less variation in saltiness.
+**Chlorides(Mean: 0.09, St. Dev.: 0.05):** The average chlorides level is low, indicative of the salt content in wine. The standard deviation is also low, showing less variation in saltiness.
 
-Free Sulfur Dioxide (Mean: 15.87, St. Dev.: 10.46): Indicates a wide range of free sulfur dioxide content, which can affect both the taste and aroma of the wine.
+**Free Sulfur Dioxide (Mean: 15.87, St. Dev.: 10.46):** Indicates a wide range of free sulfur dioxide content, which can affect both the taste and aroma of the wine.
 
-Density (Mean: 1.00, St. Dev.: 0.002): The mean density is around 1.00, typical for wine, with a very low standard deviation, showing that density is quite consistent across different wine samples.
+**Density (Mean: 1.00, St. Dev.: 0.002):** The mean density is around 1.00, typical for wine, with a very low standard deviation, showing that density is quite consistent across different wine samples.
 
-**HISTOGRAM OF ALCOHOL AND QUALITY **
+**HISTOGRAM OF ALCOHOL AND QUALITY** 
 
 Observation from Histogram: The distribution of alcohol content appears to be right-skewed.
 
 Implication: Most of the wines have a moderate alcohol content, with fewer wines having very high alcohol levels. Right skewness means the tail on the right side of the distribution is longer or fatter than the left side. In a positively skewed distribution, the mean is typically greater than the median.
 
-**SCATTERPLOT FOR ALCOHOL VS QUALITY **
+**SCATTERPLOT FOR ALCOHOL VS QUALITY**
 
 Positive Correlation: The upward-sloping trend line suggests a positive correlation between alcohol content and wine quality. This implies that, on average, wines with higher alcohol content tend to receive higher quality ratings.
 
@@ -88,7 +88,7 @@ Recommendation for Further Statistical Analysis: Given the complexity of factors
 
 Outliers In our analysis, we observed that the dataset exhibits minimal instances of outliers.This suggests a relatively homogenous distribution of values, contributing to the robustness of our dataset for further analysis.
 
-**SCATTERPLOT FOR VOLATILE ACIDITY VS QUALITY **
+**SCATTERPLOT FOR VOLATILE ACIDITY VS QUALITY** 
 
 Negative Correlation: The scatter plot shows a negative correlation between volatile acidity and quality, indicated by the downward slope of the red line of best fit. As volatile acidity increases, quality ratings tend to decrease.
 
@@ -96,7 +96,7 @@ Variability of Data: There is considerable spread around the line of best fit, s
 
 OUTLIERS: There are very few points at the quality extremes (quality levels 3 and 8), which could be considered outliers simply due to their rarity in the dataset.
 
-**SCATTERPLOT FOR SULPHATES VS QUALITY **
+**SCATTERPLOT FOR SULPHATES VS QUALITY** 
 
 POSITIVE CORRELATION: The red line indicates a positive correlation between sulphates and quality. As the sulphate level increases, the quality rating seems to increase as well. The line of best fit slopes upward across the chart, which suggests that wines with higher sulphate levels tend to have higher quality ratings.
 

@@ -147,23 +147,23 @@ F Statistic          468.267 370.379 268.912 201.570 167.097 139.922 121.091
 ============================================================================
 Note:                                                                     NA
 
-Alcohol (Coefficient Range: 0.292 to 0.361): A one-unit increase in alcohol is associated with an increase of 0.298 in quality. Higher alcohol content is consistently associated with higher quality ratings. The effect size varies slightly but remains significant.T-value: 20.06, Highly statistically significant
+**Alcohol (Coefficient Range: 0.292 to 0.361):** A one-unit increase in alcohol is associated with an increase of 0.298 in quality. Higher alcohol content is consistently associated with higher quality ratings. The effect size varies slightly but remains significant.T-value: 20.06, Highly statistically significant
 
-Volatile Acidity (Coefficient Range: -1.384 to -1.129): A one-unit increase in volatile acidity is associated with a decrease of 1.129 in quality. Volatile acidity negatively affects wine quality. Higher levels of volatile acidity are associated with lower quality ratings. This effect is quite significant in magnitude, suggesting a strong influence on quality perception. T-value: -12.58, Highly statistically significant.
+**Volatile Acidity (Coefficient Range: -1.384 to -1.129):** A one-unit increase in volatile acidity is associated with a decrease of 1.129 in quality. Volatile acidity negatively affects wine quality. Higher levels of volatile acidity are associated with lower quality ratings. This effect is quite significant in magnitude, suggesting a strong influence on quality perception. T-value: -12.58, Highly statistically significant.
 
-Sulfates (Coefficient Range: 0.677 to 0.713): A one-unit increase in sulphates is associated with an increase of 0.677 in quality.. Sulphates show a positive relationship with wine quality. This indicates that wines with higher sulphates content tend to be rated higher in quality. T-value: 5.39, Statistically significant.
+**Sulfates (Coefficient Range: 0.677 to 0.713):** A one-unit increase in sulphates is associated with an increase of 0.677 in quality.. Sulphates show a positive relationship with wine quality. This indicates that wines with higher sulphates content tend to be rated higher in quality. T-value: 5.39, Statistically significant.
 
-Residual Sugar (Coefficient Range: -0.002 to 0.009): A one-unit increase in residual sugar is associated with an increase of 0.003 in quality.The impact of residual sugar on quality is minimal and inconsistent across models, indicated by the small coefficients. This suggests residual sugar is not a strong predictor of quality in this dataset. T-value: -0.14, Not statistically significant (far below the threshold of 2 in absolute value).
+**Residual Sugar (Coefficient Range: -0.002 to 0.009):** A one-unit increase in residual sugar is associated with an increase of 0.003 in quality.The impact of residual sugar on quality is minimal and inconsistent across models, indicated by the small coefficients. This suggests residual sugar is not a strong predictor of quality in this dataset. T-value: -0.14, Not statistically significant (far below the threshold of 2 in absolute value).
 
-Total Sulfur Dioxide (Coefficient Range: -0.003 to -0.002):A one-unit increase in total sulfur dioxide is associated with a decrease of 0.003 in quality. Total sulfur dioxide has a very small negative impact on quality. However, the effect is minimal, as indicated by the small coefficients. T-value: -2.00, Marginally statistically significant (on the threshold).
+**Total Sulfur Dioxide (Coefficient Range: -0.003 to -0.002):** A one-unit increase in total sulfur dioxide is associated with a decrease of 0.003 in quality. Total sulfur dioxide has a very small negative impact on quality. However, the effect is minimal, as indicated by the small coefficients. T-value: -2.00, Marginally statistically significant (on the threshold).
 
-Free Sulfur Dioxide (Coefficient: 0.004): A one-unit increase in free sulfur dioxide is associated with an increase of 0.004 in quality. The effect of free sulfur dioxide on quality is positive but small, suggesting a limited impact.T-value: 2.00 , Marginally statistically significant (on the threshold).
+**Free Sulfur Dioxide (Coefficient: 0.004):** A one-unit increase in free sulfur dioxide is associated with an increase of 0.004 in quality. The effect of free sulfur dioxide on quality is positive but small, suggesting a limited impact.T-value: 2.00 , Marginally statistically significant (on the threshold).
 
-Fixed Acidity (Coefficient: 0.024):A one-unit increase in fixed acidity is associated with an increase of 0.024 in quality. Fixed acidity shows a small positive relationship with quality in the final models, but again, the impact is relatively minor. T-value: 0.10, Not statistically significant.
+**Fixed Acidity (Coefficient: 0.024):** A one-unit increase in fixed acidity is associated with an increase of 0.024 in quality. Fixed acidity shows a small positive relationship with quality in the final models, but again, the impact is relatively minor. T-value: 0.10, Not statistically significant.
 
-Model Fit (R² Range: 0.227 to 0.348):The R² values, which measure the proportion of variance in quality explained by the models, improve as more variables are added. However, even in the most complex model (model 8), only about 34.8% of the variance in quality is explained, indicating that other factors not included in the model also play a significant role in determining wine quality.
+**Model Fit (R² Range: 0.227 to 0.348):** The R² values, which measure the proportion of variance in quality explained by the models, improve as more variables are added. However, even in the most complex model (model 8), only about 34.8% of the variance in quality is explained, indicating that other factors not included in the model also play a significant role in determining wine quality.
 
-Residual Standard Error: The residual standard error decreases as more variables are added, indicating a better fit of the model to the data.
+**Residual Standard Error:** The residual standard error decreases as more variables are added, indicating a better fit of the model to the data.
 
 In summary, the regression analysis suggests that alcohol content and volatile acidity are strong predictors of red wine quality, with alcohol positively associated and volatile acidity negatively associated with quality.
 
@@ -171,17 +171,17 @@ In summary, the regression analysis suggests that alcohol content and volatile a
 
 Economic significance refers to the practical importance of the coefficients in real-world contexts, such as their impact on quality:
 
-Alcohol: A positive and relatively large coefficient across all models suggests that alcohol content has a noticeable positive impact on quality.
+**Alcohol:** A positive and relatively large coefficient across all models suggests that alcohol content has a noticeable positive impact on quality.
 
-Volatile Acidity: The negative coefficients indicate that higher volatile acidity reduces quality, and the magnitude suggests a substantial impact.
+**Volatile Acidity:** The negative coefficients indicate that higher volatile acidity reduces quality, and the magnitude suggests a substantial impact.
 
-Sulphates: Positive coefficients with moderate size suggest a meaningful positive impact on quality.
+**Sulphates:** Positive coefficients with moderate size suggest a meaningful positive impact on quality.
 
-Residual Sugar and Total Sulfur Dioxide: Small coefficients suggest these factors might have a limited economic impact on quality.
+**Residual Sugar and Total Sulfur Dioxide:** Small coefficients suggest these factors might have a limited economic impact on quality.
 
-Free Sulfur Dioxide: Although statistically significant, the small coefficient indicates a limited practical impact.
+**Free Sulfur Dioxide:** Although statistically significant, the small coefficient indicates a limited practical impact.
 
-Fixed Acidity: Given its small coefficient and high standard error, fixed acidity likely has minimal economic significance.
+**Fixed Acidity:** Given its small coefficient and high standard error, fixed acidity likely has minimal economic significance.
 
 **LINEAR HYPOTHESIS TEST**
 
@@ -202,7 +202,9 @@ Fixed Acidity: Given its small coefficient and high standard error, fixed acidit
   2   1591  2 19.045 6.704e-09 ***
   ---
   Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-F-Statistic (F): 19.045: This is the value of the F-statistic for the test. Model 2 provides a significantly better fit to the data than the restricted model (Model 1).
+
+  
+**F-Statistic (F):** 19.045: This is the value of the F-statistic for the test. Model 2 provides a significantly better fit to the data than the restricted model (Model 1).
 
 -The linear hypothesis test compares two models to assess the significance of sulphates and fixed acidity in predicting wine quality. The test reveals that including these variables significantly improves the model’s accuracy. The very low p-value (6.704e-09) strongly suggests that both sulphates and fixed acidity are key predictors of wine quality, rejecting the hypothesis that their coefficients are zero.
 
@@ -259,49 +261,49 @@ F Statistic           121.091    111.806
 Note:                                  NA
 Interpretation of Coefficients
 
-Model (1) Alcohol (0.298): For every one-unit increase in alcohol, quality increases by 0.298 units, assuming all other variables are held constant.
+**Model (1) Alcohol (0.298):** For every one-unit increase in alcohol, quality increases by 0.298 units, assuming all other variables are held constant.
 
-Volatile Acidity (-1.129): For every one-unit increase in volatile acidity, quality decreases by 1.129 units, holding other factors constant.
+**Volatile Acidity (-1.129):** For every one-unit increase in volatile acidity, quality decreases by 1.129 units, holding other factors constant.
 
-Sulphates (0.677): Each one-unit increase in sulphates is associated with an increase of 0.677 units in quality, with other variables constant.
+**Sulphates (0.677):** Each one-unit increase in sulphates is associated with an increase of 0.677 units in quality, with other variables constant.
 
-Residual Sugar (0.003): A one-unit increase in residual sugar increases the quality by 0.003 units, all else being equal.
+**Residual Sugar (0.003):** A one-unit increase in residual sugar increases the quality by 0.003 units, all else being equal.
 
-Total Sulfur Dioxide (-0.003): With each unit increase in total sulfur dioxide, there’s a decrease of 0.003 units in quality, assuming other factors remain constant.
+**Total Sulfur Dioxide (-0.003):** With each unit increase in total sulfur dioxide, there’s a decrease of 0.003 units in quality, assuming other factors remain constant.
 
-Free Sulfur Dioxide (0.004): For every one-unit increase in free sulfur dioxide, quality increases by 0.004 units, other variables held constant.
+**Free Sulfur Dioxide (0.004):** For every one-unit increase in free sulfur dioxide, quality increases by 0.004 units, other variables held constant.
 
-Fixed Acidity (0.024): Each one-unit increase in fixed acidity results in an increase of 0.024 units in quality, keeping other factors the same.
+**Fixed Acidity (0.024):** Each one-unit increase in fixed acidity results in an increase of 0.024 units in quality, keeping other factors the same.
 
-Model (2)
+**Model (2)**
 
-Alcohol (-0.082): For each one-unit increase in alcohol, quality decreases by 0.082 units, assuming other variables are constant. This is a change from Model (1), likely due to the interaction with sulphates.
+**Alcohol (-0.082):** For each one-unit increase in alcohol, quality decreases by 0.082 units, assuming other variables are constant. This is a change from Model (1), likely due to the interaction with sulphates.
 
-Volatile Acidity (-1.100): A one-unit increase in volatile acidity decreases the quality by 1.100 units, with all other variables held constant.
+**Volatile Acidity (-1.100):** A one-unit increase in volatile acidity decreases the quality by 1.100 units, with all other variables held constant.
 
-Sulphates (-4.979): Each one-unit increase in sulphates decreases the quality by 4.979 units, assuming other factors remain constant. This dramatic change from Model (1) is due to the interaction term.
+**Sulphates (-4.979):** Each one-unit increase in sulphates decreases the quality by 4.979 units, assuming other factors remain constant. This dramatic change from Model (1) is due to the interaction term.
 
-Residual Sugar (0.005): A one-unit increase in residual sugar is associated with an increase of 0.005 units in quality, other factors being equal.
+**Residual Sugar (0.005):** A one-unit increase in residual sugar is associated with an increase of 0.005 units in quality, other factors being equal.
 
-Total Sulfur Dioxide (-0.003): For each unit increase in total sulfur dioxide, there’s a decrease of 0.003 units in quality, keeping other variables constant.
+**Total Sulfur Dioxide (-0.003):** For each unit increase in total sulfur dioxide, there’s a decrease of 0.003 units in quality, keeping other variables constant.
 
-Free Sulfur Dioxide (0.004): Each one-unit increase in free sulfur dioxide increases quality by 0.004 units, with other factors held constant.
+**Free Sulfur Dioxide (0.004):** Each one-unit increase in free sulfur dioxide increases quality by 0.004 units, with other factors held constant.
 
-Fixed Acidity (0.019): A one-unit increase in fixed acidity leads to an increase of 0.019 units in quality, assuming no changes in other variables.
+**Fixed Acidity (0.019):** A one-unit increase in fixed acidity leads to an increase of 0.019 units in quality, assuming no changes in other variables.
 
-Alcohol:Sulphates (0.562): This interaction term implies that the impact of alcohol on quality increases by 0.562 units for each one-unit increase in sulphates, and vice versa. This term indicates that the effect of each on quality is not independent but interdependent.
+**Alcohol:Sulphates (0.562):** This interaction term implies that the impact of alcohol on quality increases by 0.562 units for each one-unit increase in sulphates, and vice versa. This term indicates that the effect of each on quality is not independent but interdependent.
 
-CONSTANT (INTERCEPT): This represents the expected value of the dependent variable when all independent variables are zero.
+**CONSTANT (INTERCEPT):** This represents the expected value of the dependent variable when all independent variables are zero.
 
 **STATISTICAL SIGNIFICANCE:**
 
 The coefficients for alcohol, volatile.acidity, and sulphates are statistically significant in Model (1), as indicated by their standard errors which are relatively small compared to the coefficients themselves. In Model (2), the introduction of the interaction term alcohol:sulphates changes the significance of the alcohol and sulphates coefficients. The interaction term itself has a coefficient of 0.562 with a standard error of 0.119, indicating statistical significance. The F statistics for both models are high, which suggests that the variables, as a set, are statistically significant predictors of wine quality. The p-values associated with these coefficients (not provided here) would typically need to be below a threshold (such as 0.05) to be considered statistically significant.
 
-OBSERVATIONS: The number of data points used in the analysis is 1,599 for both models.
+**OBSERVATIONS:** The number of data points used in the analysis is 1,599 for both models.
 
 R2 and ADJUSTED R2: These are measures of the model’s goodness of fit. R2 of 0.348 in model (1) and 0.360 in model (2) suggests that approximately 34.8% and 36.0% of the variability in quality is explained by the model, respectively. Adjusted R2 adjusts for the number of predictors in the model, providing a more accurate measure in the presence of multiple variables.
 
-RESIDUAL STANDARD ERROR: This shows the average amount that the response will deviate from the true regression line.
+**RESIDUAL STANDARD ERROR:** This shows the average amount that the response will deviate from the true regression line.
 
 **KEY INSIGHTS**
 
@@ -324,13 +326,15 @@ Note: Coefficient covariance matrix supplied.
 2   1590  1 22.117 2.787e-06 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-Hypothesis interaction term
 
-Model 1 (Restricted Model): Does not include the interaction term between alcohol and sulphates. Model 2 (Full Model): Includes the interaction term along with other predictors. **Key Results*: Residual Degrees of Freedom (Res.Df): Model 1: 1591 Model 2: 1590 The decrease by one degree of freedom in Model 2 indicates the addition of the interaction term.
 
-Difference in Degrees of Freedom (Df): The difference of 1 degree of freedom reflects the inclusion of the interaction term in Model 2. F-Statistic (F): 22.117: This is a measure of the change in the model’s explanatory power due to the addition of the interaction term. The value of 22.117 is relatively high, indicating a significant effect of including the interaction term.
+**Hypothesis interaction term**
 
-P-Value (Pr(>F)): 2.787e-06: -The p-value is extremely small (2.787e-06), indicating a highly significant effect of the interaction term. It strongly suggests that the interaction between alcohol and sulphates is a significant predictor of wine quality.
+**Model 1 (Restricted Model):** Does not include the interaction term between alcohol and sulphates. Model 2 (Full Model): Includes the interaction term along with other predictors. **Key Results*: Residual Degrees of Freedom (Res.Df): Model 1: 1591 Model 2: 1590 The decrease by one degree of freedom in Model 2 indicates the addition of the interaction term.
+
+**Difference in Degrees of Freedom (Df):** The difference of 1 degree of freedom reflects the inclusion of the interaction term in Model 2. F-Statistic (F): 22.117: This is a measure of the change in the model’s explanatory power due to the addition of the interaction term. The value of 22.117 is relatively high, indicating a significant effect of including the interaction term.
+
+**P-Value (Pr(>F)):** 2.787e-06: -The p-value is extremely small (2.787e-06), indicating a highly significant effect of the interaction term. It strongly suggests that the interaction between alcohol and sulphates is a significant predictor of wine quality.
 
 -The linear hypothesis test results show that the interaction term alcohol:sulphates significantly improves the model’s ability to predict wine quality. The inclusion of this term captures a synergistic effect that is not evident when considering alcohol and sulphates individually. This suggests that the combined effect of alcohol and sulphates on wine quality is substantial and important to consider in the model.
 

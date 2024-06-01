@@ -79,8 +79,6 @@ ggplot(data, aes(x=alcohol, y=quality)) + geom_point(col="blue") +
         stat_smooth(method=lm, col = "red", se=FALSE) 
 ```
 
-
-
 **SCATTERPLOT FOR VOLATILE ACIDITY VS QUALITY**
 ```{r scatterp1, echo=FALSE, message=FALSE, warning=FALSE, comment=""}
 ggplot(data, aes(x=volatile.acidity, y=quality)) + geom_point(col="blue") + 
@@ -88,19 +86,12 @@ ggplot(data, aes(x=volatile.acidity, y=quality)) + geom_point(col="blue") +
         stat_smooth(method=lm, col = "red", se=FALSE) 
 ```
 
-
-
-
-
 **SCATTERPLOT FOR SULPHATES VS QUALITY**
 ```{r scatterp2, echo=FALSE, message=FALSE, warning=FALSE, comment=""}
 ggplot(data, aes(x=sulphates, y=quality)) + geom_point(col="blue") + 
         labs(title = "Sulphates vs Quality ", x = "Sulphates", y = "Quality") +
         stat_smooth(method=lm, col = "red", se=FALSE) 
 ```
-
-
-
 
 **BASE REGRESSION ANALYSIS ON QUALITY**
 ```{r graph, echo=FALSE, message=FALSE, warning=FALSE, comment=""}
@@ -134,16 +125,12 @@ stargazer(regr1, regr2,regr3, regr4,regr5,regr6,regr7,
     star.cutoffs=NA, df=FALSE, digits=3)
 ``` 
 
-
 **LINEAR HYPOTHESIS TEST**
 ```{r hypothesis test, echo=FALSE, message=FALSE, warning=FALSE, comment=" "}
 # Hypothesis test using lht command  
 full_model <- lm(quality  ~ alcohol+ volatile.acidity + sulphates + residual.sugar + total.sulfur.dioxide + free.sulfur.dioxide + fixed.acidity, data = data)
 lht(full_model,c("sulphates = 0","fixed.acidity = 0"),white.adjust="hc1")
 ```
-
-
-
 
 **ALTERNATIVE REGRESSION ANALYSIS**
 ```{r interaction,echo=FALSE, message=FALSE, warning=FALSE, comment=""}
@@ -159,9 +146,6 @@ stargazer(model1,model2, se=list(cse(model1),cse(model2)),
 
 ```
 
-
-
-
 ```{r hypothesis 3, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, comment=""}
 
 # Hypothesis test using lht command  
@@ -169,25 +153,4 @@ stargazer(model1,model2, se=list(cse(model1),cse(model2)),
 restricted_model <- lm(quality ~ alcohol+ volatile.acidity + sulphates + residual.sugar + total.sulfur.dioxide + free.sulfur.dioxide+fixed.acidity, data = data)
 unrestricted_model <- lm(quality ~ alcohol+ volatile.acidity + sulphates + residual.sugar + total.sulfur.dioxide + free.sulfur.dioxide+fixed.acidity+alcohol:sulphates, data = data)
 lht(unrestricted_model,c("alcohol:sulphates = 0"),white.adjust="hc1")
-
 ```
-
-**Hypothesis interaction term**
-
-**Model 1 (Restricted Model)**: Does not include the interaction term between alcohol and sulphates.
-**Model 2 (Full Model)**: Includes the interaction term along with other predictors.
-**Key Results*:
-**Residual Degrees of Freedom (Res.Df)**:
-Model 1: 1591
-Model 2: 1590
-The decrease by one degree of freedom in Model 2 indicates the addition of the interaction term.
-
-**Difference in Degrees of Freedom (Df)**: The difference of 1 degree of freedom reflects the inclusion of the interaction term in Model 2.
-**F-Statistic (F)**: 22.117:
-This is a measure of the change in the model's explanatory power due to the addition of the interaction term. The value of 22.117 is relatively high, indicating a significant effect of including the interaction term.
-
-**P-Value (Pr(>F))**: 2.787e-06:
--The p-value is extremely small (2.787e-06), indicating a highly significant effect of the interaction term. It strongly suggests that the interaction between alcohol and sulphates is a significant predictor of wine quality.
-
--The linear hypothesis test results show that the interaction term alcohol:sulphates significantly improves the model's ability to predict wine quality. The inclusion of this term captures a synergistic effect that is not evident when considering alcohol and sulphates individually. This suggests that the combined effect of alcohol and sulphates on wine quality is substantial and important to consider in the model.
-

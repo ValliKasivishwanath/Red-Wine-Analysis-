@@ -143,13 +143,10 @@ model2 <- lm(quality  ~ alcohol+ volatile.acidity + sulphates + residual.sugar +
 stargazer(model1,model2, se=list(cse(model1),cse(model2)),
     title= 'Regression Analysis: Interaction Model of Alcohol and sulphates', type="text", 
     star.cutoffs=NA, df=FALSE, digits=3)
-
 ```
 
 ```{r hypothesis 3, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, comment=""}
-
 # Hypothesis test using lht command  
-
 restricted_model <- lm(quality ~ alcohol+ volatile.acidity + sulphates + residual.sugar + total.sulfur.dioxide + free.sulfur.dioxide+fixed.acidity, data = data)
 unrestricted_model <- lm(quality ~ alcohol+ volatile.acidity + sulphates + residual.sugar + total.sulfur.dioxide + free.sulfur.dioxide+fixed.acidity+alcohol:sulphates, data = data)
 lht(unrestricted_model,c("alcohol:sulphates = 0"),white.adjust="hc1")

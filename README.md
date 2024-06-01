@@ -30,23 +30,7 @@ The Wine Quality dataset stands as a valuable resource in the realms of oenology
 **Data Source:** https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009/code
 
 
-Descriptive Statistics of Red Wine Quality
-================================================
-Statistic              N   Mean  Median St. Dev.
-------------------------------------------------
-alcohol              1,599 10.42 10.20    1.07  
-volatile.acidity     1,599 0.53   0.52    0.18  
-pH                   1,599 3.31   3.31    0.15  
-sulphates            1,599 0.66   0.62    0.17  
-residual.sugar       1,599 2.54   2.20    1.41  
-total.sulfur.dioxide 1,599 46.47 38.00   32.90  
-fixed.acidity        1,599 8.32   7.90    1.74  
-citric.acid          1,599 0.27   0.26    0.19  
-chlorides            1,599 0.09   0.08    0.05  
-free.sulfur.dioxide  1,599 15.87 14.00   10.46  
-density              1,599 1.00   1.00   0.002  
-------------------------------------------------
-**Mean and Standard Deviation**
+**Descriptive Statistics of Red Wine Quality**
 
 **Alcohol (Mean: 10.42, St. Dev.: 1.07):** Average alcohol content is 10.42%, with a typical variation of ±1.07%. This indicates a moderate level of alcohol concentration common in red wines.
 
@@ -106,47 +90,6 @@ OUTLIERS: There do not appear to be extreme outliers as in the previous chart. H
 
 **BASE REGRESSION ANALYSIS ON QUALITY**
 
-
-Regression Analysis: Effect of Variables on Quality
-============================================================================
-                                       Dependent variable:                  
-                     -------------------------------------------------------
-                                             quality                        
-                       (1)     (2)     (3)     (4)     (5)     (6)     (7)  
-----------------------------------------------------------------------------
-alcohol               0.361   0.314   0.309   0.309   0.294   0.292   0.298 
-                     (0.018) (0.018) (0.018) (0.018) (0.019) (0.019) (0.019)
-                                                                            
-volatile.acidity             -1.384  -1.221  -1.221  -1.199  -1.188  -1.129 
-                             (0.110) (0.111) (0.111) (0.113) (0.114) (0.117)
-                                                                            
-sulphates                             0.679   0.679   0.713   0.712   0.677 
-                                     (0.126) (0.126) (0.123) (0.123) (0.123)
-                                                                            
-residual.sugar                               -0.002   0.009   0.008   0.003 
-                                             (0.014) (0.014) (0.014) (0.014)
-                                                                            
-total.sulfur.dioxide                                 -0.002  -0.003  -0.003 
-                                                     (0.001) (0.001) (0.001)
-                                                                            
-free.sulfur.dioxide                                           0.004   0.004 
-                                                             (0.002) (0.002)
-                                                                            
-fixed.acidity                                                         0.024 
-                                                                     (0.012)
-                                                                            
-Constant              1.875   3.095   2.611   2.615   2.817   2.815   2.541 
-                     (0.185) (0.212) (0.217) (0.222) (0.231) (0.232) (0.275)
-                                                                            
-----------------------------------------------------------------------------
-Observations          1,599   1,599   1,599   1,599   1,599   1,599   1,599 
-R2                    0.227   0.317   0.336   0.336   0.344   0.345   0.348 
-Adjusted R2           0.226   0.316   0.335   0.334   0.342   0.343   0.345 
-Residual Std. Error   0.710   0.668   0.659   0.659   0.655   0.655   0.654 
-F Statistic          468.267 370.379 268.912 201.570 167.097 139.922 121.091
-============================================================================
-Note:                                                                     NA
-
 **Alcohol (Coefficient Range: 0.292 to 0.361):** A one-unit increase in alcohol is associated with an increase of 0.298 in quality. Higher alcohol content is consistently associated with higher quality ratings. The effect size varies slightly but remains significant.T-value: 20.06, Highly statistically significant
 
 **Volatile Acidity (Coefficient Range: -1.384 to -1.129):** A one-unit increase in volatile acidity is associated with a decrease of 1.129 in quality. Volatile acidity negatively affects wine quality. Higher levels of volatile acidity are associated with lower quality ratings. This effect is quite significant in magnitude, suggesting a strong influence on quality perception. T-value: -12.58, Highly statistically significant.
@@ -183,27 +126,7 @@ Economic significance refers to the practical importance of the coefficients in 
 
 **Fixed Acidity:** Given its small coefficient and high standard error, fixed acidity likely has minimal economic significance.
 
-**LINEAR HYPOTHESIS TEST**
 
-  Linear hypothesis test
-  
-  Hypothesis:
-  sulphates = 0
-  fixed.acidity = 0
-  
-  Model 1: restricted model
-  Model 2: quality ~ alcohol + volatile.acidity + sulphates + residual.sugar + 
-      total.sulfur.dioxide + free.sulfur.dioxide + fixed.acidity
-  
-  Note: Coefficient covariance matrix supplied.
-  
-    Res.Df Df      F    Pr(>F)    
-  1   1593                        
-  2   1591  2 19.045 6.704e-09 ***
-  ---
-  Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-  
 **F-Statistic (F):** 19.045: This is the value of the F-statistic for the test. Model 2 provides a significantly better fit to the data than the restricted model (Model 1).
 
 -The linear hypothesis test compares two models to assess the significance of sulphates and fixed acidity in predicting wine quality. The test reveals that including these variables significantly improves the model’s accuracy. The very low p-value (6.704e-09) strongly suggests that both sulphates and fixed acidity are key predictors of wine quality, rejecting the hypothesis that their coefficients are zero.
@@ -215,51 +138,6 @@ In selecting Regression 7 as the baseline model, we aimed to capture the fundame
 Overall, Regression 7 serves as a meaningful starting point, allowing for a comprehensive exploration of the relationships between key wine characteristics and quality.
 
 **ALTERNATIVE REGRESSION ANALYSIS**
-
-
-Regression Analysis: Interaction Model of Alcohol and sulphates
-=========================================
-                     Dependent variable: 
-                     --------------------
-                           quality       
-                        (1)        (2)   
------------------------------------------
-alcohol                0.298     -0.082  
-                      (0.019)    (0.079) 
-                                         
-volatile.acidity       -1.129    -1.100  
-                      (0.117)    (0.116) 
-                                         
-sulphates              0.677     -4.979  
-                      (0.123)    (1.214) 
-                                         
-residual.sugar         0.003      0.005  
-                      (0.014)    (0.014) 
-                                         
-total.sulfur.dioxide   -0.003    -0.003  
-                      (0.001)    (0.001) 
-                                         
-free.sulfur.dioxide    0.004      0.004  
-                      (0.002)    (0.002) 
-                                         
-fixed.acidity          0.024      0.019  
-                      (0.012)    (0.012) 
-                                         
-alcohol:sulphates                 0.562  
-                                 (0.119) 
-                                         
-Constant               2.541      6.395  
-                      (0.275)    (0.808) 
-                                         
------------------------------------------
-Observations           1,599      1,599  
-R2                     0.348      0.360  
-Adjusted R2            0.345      0.357  
-Residual Std. Error    0.654      0.648  
-F Statistic           121.091    111.806 
-=========================================
-Note:                                  NA
-Interpretation of Coefficients
 
 **Model (1) Alcohol (0.298):** For every one-unit increase in alcohol, quality increases by 0.298 units, assuming all other variables are held constant.
 
@@ -308,25 +186,6 @@ R2 and ADJUSTED R2: These are measures of the model’s goodness of fit. R2 of 0
 **KEY INSIGHTS**
 
 -The inclusion of the interaction term significantly changes the interpretation. While alcohol and sulphates individually seem to have a negative effect on quality in Model 2, their combined presence actually improves quality. -The interaction term suggests a synergistic effect: the presence of both high alcohol and high sulphates works better for quality than each component separately. -The R2 value in Model 2 (0.360) is slightly higher than in Model 1 (0.348), indicating a better fit to the data when the interaction term is included. -In summary, the analysis underscores the importance of considering interaction effects in regression models, as they can reveal complex relationships between variables that are not apparent when variables are considered individually.
-
-**Linear hypothesis test**
-
-Hypothesis:
-alcohol:sulphates = 0
-
-Model 1: restricted model
-Model 2: quality ~ alcohol + volatile.acidity + sulphates + residual.sugar + 
-    total.sulfur.dioxide + free.sulfur.dioxide + fixed.acidity + 
-    alcohol:sulphates
-
-Note: Coefficient covariance matrix supplied.
-
-  Res.Df Df      F    Pr(>F)    
-1   1591                        
-2   1590  1 22.117 2.787e-06 ***
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
 
 **Hypothesis interaction term**
 
